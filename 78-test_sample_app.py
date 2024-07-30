@@ -1,5 +1,5 @@
-import pytest
-from playwright.sync_api import Page, expect
+import pytest # type: ignore
+from playwright.sync_api import Page, expect # type: ignore
 
 
 @pytest.fixture(autouse=True)

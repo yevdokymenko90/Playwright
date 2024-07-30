@@ -1,5 +1,5 @@
-import pytest
-from playwright.sync_api import Page, TimeoutError
+import pytest # type: ignore
+from playwright.sync_api import Page, TimeoutError # type: ignore
 
 
 def test_nbsp(page: Page):
