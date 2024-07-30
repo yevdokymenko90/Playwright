@@ -10,4 +10,6 @@ def test_load_delay(page: Page):
     btn = page.get_by_role("button", name="Button Appearing After Delay")
     btn.wait_for()
 
-    expect(btn).to_be_visible()
+    expect(btn).to_be_visible() 
+    
+    
