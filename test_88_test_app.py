@@ -1,5 +1,5 @@
-from models.login_page import LoginPage # type: ignore
-from playwright.sync_api import Page, expect # type: ignore
+from models.login_page import LoginPage
+from playwright.sync_api import Page, expect
 
 
 def test_successful_login(page: Page):
@@ -10,7 +10,7 @@ def test_successful_login(page: Page):
 
     login_page.login(username, password)
 
-    expect(login_page.label).to_have_text( # type: ignore
+    expect(login_page.label).to_have_text(
         f"Welcome, {username}!"
         )
 
@@ -23,6 +23,8 @@ def test_failed_login(page: Page):
 
     login_page.login(username, password)
 
-    expect(login_page.label).to_have_text( # type: ignore
+    expect(login_page.label).to_have_text(
         "Invalid username/password"
     )
+    
+    

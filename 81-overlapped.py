@@ -1,4 +1,4 @@
-from playwright.sync_api import Page, expect # type: ignore
+from playwright.sync_api import Page, expect
 
 
 def test_overlapped(page: Page):
